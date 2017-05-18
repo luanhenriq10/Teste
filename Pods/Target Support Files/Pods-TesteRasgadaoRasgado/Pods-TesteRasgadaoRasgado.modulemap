@@ -1,0 +1,6 @@
+framework module Pods_TesteRasgadaoRasgado {
+  umbrella header "Pods-TesteRasgadaoRasgado-umbrella.h"
+
+  export *
+  module * { export * }
+}

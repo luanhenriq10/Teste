@@ -12,6 +12,7 @@
 		2F9830061ECDE88C005FA910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9830041ECDE88C005FA910 /* Main.storyboard */; };
 		2F9830081ECDE88C005FA910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9830071ECDE88C005FA910 /* Assets.xcassets */; };
 		2F98300B1ECDE88C005FA910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9830091ECDE88C005FA910 /* LaunchScreen.storyboard */; };
+		D9C003FD05367E06B42B1613 /* Pods_TesteRasgadaoRasgado.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB926DE409BD83B348C0383 /* Pods_TesteRasgadaoRasgado.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		2F9830071ECDE88C005FA910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F98300A1ECDE88C005FA910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F98300C1ECDE88C005FA910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8A7337C91F3967C8CC63B3B /* Pods-TesteRasgadaoRasgado.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteRasgadaoRasgado.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TesteRasgadaoRasgado/Pods-TesteRasgadaoRasgado.debug.xcconfig"; sourceTree = "<group>"; };
+		ECB926DE409BD83B348C0383 /* Pods_TesteRasgadaoRasgado.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesteRasgadaoRasgado.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3CA9FBC249CFE38A1F85BC /* Pods-TesteRasgadaoRasgado.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteRasgadaoRasgado.release.xcconfig"; path = "Pods/Target Support Files/Pods-TesteRasgadaoRasgado/Pods-TesteRasgadaoRasgado.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C003FD05367E06B42B1613 /* Pods_TesteRasgadaoRasgado.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				2F982FFF1ECDE88C005FA910 /* TesteRasgadaoRasgado */,
 				2F982FFE1ECDE88C005FA910 /* Products */,
+				643DF4C685F04F71E8081089 /* Pods */,
+				42ED58488B4E7F735F7F57CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = TesteRasgadaoRasgado;
 			sourceTree = "<group>";
 		};
+		42ED58488B4E7F735F7F57CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECB926DE409BD83B348C0383 /* Pods_TesteRasgadaoRasgado.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		643DF4C685F04F71E8081089 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8A7337C91F3967C8CC63B3B /* Pods-TesteRasgadaoRasgado.debug.xcconfig */,
+				ED3CA9FBC249CFE38A1F85BC /* Pods-TesteRasgadaoRasgado.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F98300F1ECDE88C005FA910 /* Build configuration list for PBXNativeTarget "TesteRasgadaoRasgado" */;
 			buildPhases = (
+				687F1F5425D35381059D7DE0 /* [CP] Check Pods Manifest.lock */,
 				2F982FF91ECDE88C005FA910 /* Sources */,
 				2F982FFA1ECDE88C005FA910 /* Frameworks */,
 				2F982FFB1ECDE88C005FA910 /* Resources */,
+				26CE973F79B71982B58295D6 /* [CP] Embed Pods Frameworks */,
+				32D6F65BB9CA91BB326B921E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26CE973F79B71982B58295D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TesteRasgadaoRasgado/Pods-TesteRasgadaoRasgado-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32D6F65BB9CA91BB326B921E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TesteRasgadaoRasgado/Pods-TesteRasgadaoRasgado-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		687F1F5425D35381059D7DE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F982FF91ECDE88C005FA910 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		2F9830101ECDE88C005FA910 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A7337C91F3967C8CC63B3B /* Pods-TesteRasgadaoRasgado.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9HW39BBHYG;
@@ -272,6 +348,7 @@
 		};
 		2F9830111ECDE88C005FA910 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED3CA9FBC249CFE38A1F85BC /* Pods-TesteRasgadaoRasgado.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9HW39BBHYG;
