@@ -31,10 +31,15 @@ platform :ios do
   desc "This will also make sure the profile is up to date"
   lane :beta do
     # match(type: "appstore") # more information: https://codesigning.guide
+   
+    update_project_team(
+      path: 'TesteRasgadaoRasgado.xcodeproj',
+      teamid: 'SZSQ274898'
+    )
     gym(scheme: "TesteRasgadaoRasgado”,
-	       workspace: 'TesteRasgadaoRasgado.xcodeproj',
+	       workspace: 'TesteRasgadaoRasgado.xcworkspace',
 	       include_bitcode: true) # Build your app - more options available
-    pilot
+
 
     # sh "your_script.sh"
     # You can also use other beta testing services here (run `fastlane actions`)
@@ -45,7 +50,7 @@ platform :ios do
     # match(type: "appstore")
     # snapshot
      gym(scheme: "TesteRasgadaoRasgado”,
-	       workspace: 'TesteRasgadaoRasgado.xcodeproj',
+	       workspace: 'TesteRasgadaoRasgado.xcworkspace',
 	       include_bitcode: true) # Build your app - more options available
     deliver(force: true)
     # frameit
